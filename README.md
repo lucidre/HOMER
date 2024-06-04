@@ -2,7 +2,7 @@
 
 ## Project Description
 Welcome to the repository for "Homer", a smart home application simulation built with Flutter. This project was created as part of a YouTube tutorial and serves as a practical demonstration of Flutter's capabilities in creating interactive and intuitive interfaces.
-I took vrsion one of the project and gave it a fresh look using custom shapes in Flutter. These unlock a world of unique and engaging designs that go way beyond basic widgets.
+I took version one of the project and gave it a fresh look using custom shapes in Flutter. These unlock a world of unique and engaging designs that go way beyond basic widgets.
 Flutter path comes with methods like moveTo, lineTo, and arcTo (and more!) to craft some seriously cool shapes. It might take a little practice to map out the points, but trust me, the results are FIRE.
 
 ## Getting Started
