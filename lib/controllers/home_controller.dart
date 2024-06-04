@@ -5,7 +5,7 @@ import 'package:homer/common_libs.dart';
 class HomeController extends GetxController {
   Timer? cleanerTimer;
   final random = Random();
-  final RxString _selectedItem = 'Kitchen'.obs;
+  final RxString _selectedItem = 'Living room'.obs;
   final RxBool _airConditionerSwitch = true.obs;
   final RxBool _speakerSwitch = false.obs;
   final RxBool _cleanerSwitch = true.obs;

@@ -32,6 +32,12 @@ class _CleanerWidgetState extends State<CleanerWidget> {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(space12),
             color: primaryColor,
+            boxShadow: [
+              BoxShadow(
+                color: primaryColor.withOpacity(0.3),
+                offset: const Offset(0, 4),
+              ),
+            ],
           ),
           child: Stack(
             children: [
@@ -60,7 +66,7 @@ class _CleanerWidgetState extends State<CleanerWidget> {
       bottom: -space24,
       right: -space24,
       child: Transform.scale(
-        scale: 1.2,
+        scale: 1.4,
         child: Image.asset(
           cleaner,
           height: 200,
@@ -77,7 +83,7 @@ class _CleanerWidgetState extends State<CleanerWidget> {
         children: [
           Text(
             'Robotic Cleaner',
-            style: satoshi700S16,
+            style: satoshi700S16.copyWith(color: white),
           ),
           verticalSpacer4,
           Text(
@@ -109,7 +115,10 @@ class _CleanerWidgetState extends State<CleanerWidget> {
           ),
           Text(
             '$percentage%',
-            style: satoshi700S24.copyWith(fontWeight: FontWeight.bold),
+            style: satoshi700S24.copyWith(
+              fontWeight: FontWeight.bold,
+              color: white,
+            ),
           ),
         ],
       );

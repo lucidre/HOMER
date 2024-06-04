@@ -11,7 +11,7 @@ class AppScaffold extends StatelessWidget {
   final FloatingActionButtonLocation? floatingActionButtonLocation;
 
   const AppScaffold({
-    Key? key,
+    super.key,
     required this.body,
     this.appBar,
     this.floatingActionButtonLocation,
@@ -19,7 +19,7 @@ class AppScaffold extends StatelessWidget {
     this.floatingActionButton,
     this.backgroundColor,
     this.bannerActions = const [],
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

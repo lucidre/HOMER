@@ -1,5 +1,6 @@
 // ignore_for_file: use_build_context_synchronously, avoid_print
 
+import 'package:flutter/cupertino.dart';
 import 'package:homer/common_libs.dart';
 
 class LightWidget extends StatefulWidget {
@@ -49,6 +50,12 @@ class _LightWidgetState extends State<LightWidget> {
                 end: Alignment.bottomRight,
                 colors: blackGradient,
               ),
+              boxShadow: [
+                BoxShadow(
+                  color: primaryColor.withOpacity(0.3),
+                  offset: const Offset(0, 4),
+                ),
+              ],
             ),
             child: SizedBox(
               height: maxHeight,
@@ -103,9 +110,9 @@ class _LightWidgetState extends State<LightWidget> {
       child: Column(
         children: [
           const Icon(
-            Icons.lightbulb_rounded,
+            CupertinoIcons.lightbulb,
             color: white,
-            size: 45,
+            size: 40,
           ),
           verticalSpacer8,
           GetX<HomeController>(builder: (controller) {
@@ -113,7 +120,10 @@ class _LightWidgetState extends State<LightWidget> {
 
             return Text(
               '${percentage.toStringAsFixed(0)}%',
-              style: satoshi700S24.copyWith(fontSize: 20),
+              style: satoshi700S24.copyWith(
+                fontSize: 20,
+                color: white,
+              ),
             );
           }),
         ],

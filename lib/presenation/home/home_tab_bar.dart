@@ -22,9 +22,9 @@ class HomeTabBars extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.end,
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        buildTabBarItem('Kitchen', previous),
-        horizontalSpacer16,
         buildTabBarItem('Living room', previous),
+        horizontalSpacer16,
+        buildTabBarItem('Kitchen', previous),
         horizontalSpacer16,
         buildTabBarItem('Bathroom', previous),
         horizontalSpacer16,
@@ -39,9 +39,7 @@ class HomeTabBars extends StatelessWidget {
     final selected = text == previous;
 
     return GestureDetector(
-      onTap: () {
-        Get.find<HomeController>().setSelectedItem(text);
-      },
+      onTap: () => Get.find<HomeController>().setSelectedItem(text),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [

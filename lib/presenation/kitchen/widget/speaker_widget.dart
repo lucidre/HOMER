@@ -17,6 +17,12 @@ class SpeakerWidget extends StatelessWidget {
           end: Alignment.bottomRight,
           colors: blackGradient,
         ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.3),
+            offset: const Offset(0, 4),
+          ),
+        ],
       ),
       child: Stack(
         children: [
@@ -40,7 +46,7 @@ class SpeakerWidget extends StatelessWidget {
                   children: [
                     Text(
                       'Speaker',
-                      style: satoshi700S16,
+                      style: satoshi700S16.copyWith(color: white),
                     ),
                     verticalSpacer4,
                     Text(

@@ -114,7 +114,7 @@ class _CleanerScreenState extends State<CleanerScreen> {
   Row buildProgressText() {
     return Row(
       children: [
-        Text('Cleaning Progress', style: satoshi500S24),
+        Text('Cleaning Progress', style: satoshi500S24.copyWith(color: white)),
         const Spacer(),
         GetX<HomeController>(builder: (controller) {
           return Text(
@@ -261,6 +261,7 @@ class _CleanerScreenState extends State<CleanerScreen> {
           '${value ? 'Stop' : 'Start'} Session',
           style: satoshi500S24.copyWith(
             fontSize: 20,
+            color: white,
           ),
         ),
         const Spacer(),
@@ -318,6 +319,7 @@ class _CleanerScreenState extends State<CleanerScreen> {
             style: satoshi700S24.copyWith(
               fontSize: 50,
               fontWeight: FontWeight.w600,
+              color: white,
             ),
           ),
           const Spacer(),

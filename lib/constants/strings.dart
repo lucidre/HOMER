@@ -15,6 +15,15 @@ Phasellus id sem cursus, mollis arcu at, vehicula dui. Donec et posuere nisi, at
 Nunc sit amet fringilla risus. Fusce ultricies velit vitae diam eleifend, ac tincidunt dolor congue. Praesent placerat sit amet urna vitae faucibus. Nulla aliquam consequat tincidunt. Sed hendrerit nisl in risus tempor facilisis. Nulla eget leo id justo pulvinar interdum. Integer posuere sem nisi, et scelerisque urna molestie in. 
 ''';
 
+const String decore = 'assets/images/decore.png';
+const String sun = 'assets/images/sun.png';
 const String conditioner = 'assets/images/conditioner2.png';
 const String cleaner = 'assets/images/cleaner.png';
 const String speaker = 'assets/images/speaker.png';
+const String camera = 'assets/images/camera.png';
+const String homePod = 'assets/images/home_pod.png';
+const String lamp = 'assets/images/lamp.png';
+
+const String powerLottie = 'assets/lottie/power.json';
+const String timelineLottie = 'assets/lottie/timeline.json';
+const String costLottie = 'assets/lottie/cost.json';

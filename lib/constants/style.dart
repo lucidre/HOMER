@@ -26,7 +26,7 @@ const Color primaryColorGrey = Color(0xFFFFA580);
 
 const Color black = Colors.black;
 const Color white = Colors.white;
-const Color borderWhite = Color(0xFFECECEC);
+const Color borderblack = Color(0xFFECECEC);
 
 const Color kYellowColor = Color(0xFFD3F300);
 
@@ -75,25 +75,26 @@ const Color primary600 = Color(0xFF129642);
 const Color primary800 = Color(0xFF166534);
 const Color primary900 = Color(0xFF14532D);
 
+// const googleFont = GoogleFonts.raleway;
 const googleFont = GoogleFonts.convergence;
 
 TextStyle satoshi500S12 = googleFont(
   fontSize: 12,
-  color: white,
+  color: black,
   fontWeight: FontWeight.w500,
   // height: 20,
   letterSpacing: 0,
 );
 TextStyle satoshi500S14 = googleFont(
   fontSize: 14,
-  color: white,
+  color: black,
   fontWeight: FontWeight.w500,
   // height: 20,
   letterSpacing: 0,
 );
 TextStyle satoshi500S16 = googleFont(
   fontSize: 16,
-  color: white,
+  color: black,
   fontWeight: FontWeight.w500,
   // height: 20,
   letterSpacing: 0,
@@ -101,7 +102,7 @@ TextStyle satoshi500S16 = googleFont(
 
 TextStyle satoshi500S24 = googleFont(
   fontSize: 24,
-  color: white,
+  color: black,
   fontWeight: FontWeight.w500,
   // height: 20,
   letterSpacing: 0,
@@ -109,34 +110,34 @@ TextStyle satoshi500S24 = googleFont(
 
 TextStyle satoshi700S12 = googleFont(
   fontSize: 12,
-  color: white,
+  color: black,
   fontWeight: FontWeight.w700,
   // height: 24,
   letterSpacing: 0,
 );
 TextStyle satoshi700S16 = googleFont(
   fontSize: 16,
-  color: white,
+  color: black,
   fontWeight: FontWeight.w700,
   // height: 24,
   letterSpacing: 0,
 );
 TextStyle satoshi700S24 = googleFont(
   fontSize: 24,
-  color: white,
+  color: black,
   fontWeight: FontWeight.w700,
   // height: 32,
   letterSpacing: 0,
 );
 TextStyle satoshi700S24W500 = googleFont(
   fontSize: 24,
-  color: white,
+  color: black,
   fontWeight: FontWeight.w500,
   letterSpacing: 0,
 );
 TextStyle satoshi700S32 = googleFont(
   fontSize: 32,
-  color: white,
+  color: black,
   fontWeight: FontWeight.w700,
   // height: 40,
   letterSpacing: 0,

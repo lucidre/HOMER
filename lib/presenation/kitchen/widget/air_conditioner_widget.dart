@@ -29,6 +29,12 @@ class _AirConditionerWidgetState extends State<AirConditionerWidget> {
           end: Alignment.bottomRight,
           colors: blackGradient,
         ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.3),
+            offset: const Offset(0, 4),
+          ),
+        ],
       ),
       child: Stack(
         children: [
@@ -62,6 +68,7 @@ class _AirConditionerWidgetState extends State<AirConditionerWidget> {
             style: satoshi700S32.copyWith(
               fontSize: 70,
               fontWeight: FontWeight.normal,
+              color: white,
             ),
           ),
           const Spacer(),
@@ -146,7 +153,7 @@ class _AirConditionerWidgetState extends State<AirConditionerWidget> {
             children: [
               Text(
                 'Air Conditioner',
-                style: satoshi700S16,
+                style: satoshi700S16.copyWith(color: white),
               ),
               verticalSpacer4,
               Text(
@@ -178,7 +185,7 @@ class _AirConditionerWidgetState extends State<AirConditionerWidget> {
       child: Opacity(
         opacity: .6,
         child: Transform.scale(
-          scale: 1.3,
+          scale: 1.4,
           child: Image.asset(
             conditioner,
             height: 200,
